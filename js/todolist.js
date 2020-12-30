@@ -25,13 +25,13 @@ function delBtnHandler(event) {
 
 function paintTodo(text) {
   const li = document.createElement("li");
-  const delBtn = document.createElement("button");
+  const delBtn = document.createElement("i");
   const span = document.createElement("span");
   const NewId = toDos.length + 1;
   li.appendChild(span);
   li.appendChild(delBtn);
   li.id = NewId;
-  delBtn.innerHTML = "✖︎";
+  delBtn.innerHTML = "  ✖︎";
   delBtn.addEventListener("click", delBtnHandler);
   span.innerText = text;
   toDoList.appendChild(li);
@@ -48,6 +48,8 @@ function givesubmit(event) {
   const plustodo = toDoInput.value;
   paintTodo(plustodo);
   toDoInput.value = "";
+  toDoInput.placeholder = "열심히 해라";
+
 }
 
 function loadToDos() {

@@ -5,6 +5,6 @@ queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'
 queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
 queryParams += '&' + encodeURIComponent('startCreateDt') + '=' + encodeURIComponent('20200410'); /**/
 queryParams += '&' + encodeURIComponent('endCreateDt') + '=' + encodeURIComponent('20200410'); /**/
-xhr.open('GET', url + queryParams);
+xhr.open('GET', url + queryParams, true);
 
 xhr.send('');
