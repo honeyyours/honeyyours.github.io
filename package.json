@@ -1,0 +1,26 @@
+{
+  "name": "honeyyours.github.io",
+  "version": "1.0.0",
+  "description": "//지금까지 했던 내용들 정리했습니다.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honeyyours/honeyyours.github.io.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/honeyyours/honeyyours.github.io/issues"
+  },
+  "homepage": "https://github.com/honeyyours/honeyyours.github.io#readme",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "xml-js": "^1.6.11",
+    "xml-json": "^2.0.2"
+  }
+}
