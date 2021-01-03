@@ -6,7 +6,7 @@ const TODAY = "20201229";
 
 function getweather() {
   fetch(
-    `http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=ZTA0ThFuL3LhjBoSmkJi7q6KH45jxcI570l0pkn5UX20KxU0%2F3VRuNUf%2FjiK27E7BDnOuXW7JTdBd0eJiNDzdg%3D%3D&pageNo=1&numOfRows=10&startCreateDt=${TODAY}&endCreateDt=${TODAY}`,
+    `https://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=ZTA0ThFuL3LhjBoSmkJi7q6KH45jxcI570l0pkn5UX20KxU0%2F3VRuNUf%2FjiK27E7BDnOuXW7JTdBd0eJiNDzdg%3D%3D&pageNo=1&numOfRows=10&startCreateDt=${TODAY}&endCreateDt=${TODAY}`,
     {
       method: "GET",
       headers: {
@@ -21,7 +21,6 @@ function getweather() {
       integrity: "", // a hash, like "sha256-abcdef1234567890"
       keepalive: false, // true
       signal: undefined, // AbortController to abort request
-      window: window, // null
     }
   )
     .then(function (response) {
